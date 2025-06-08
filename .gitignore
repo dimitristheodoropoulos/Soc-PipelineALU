@@ -1,0 +1,41 @@
+# Vivado project files
+*.xpr
+*.xps
+*.xise
+
+# Vivado-generated directories
+/.Xil/
+/_xmsgs/
+/SoC-PipelineALU.cache/
+/SoC-PipelineALU.gen/
+/SoC-PipelineALU.hw/
+/SoC-PipelineALU.ip_user_files/
+/SoC-PipelineALU.runs/
+/SoC-PipelineALU.sim/
+
+# Log and journal files
+*.log
+*.jou
+
+# Bitstream and programming files
+*.bit
+*.bin
+*.mcs
+*.prm
+*.prb
+
+# Other generated files
+*.str
+*.pb
+*.wdb
+*.tcl.log
+
+# SDK related files
+.sdk/
+*.sdk/
+
+# HLS generated files
+.ap/
+
+# Ignore project backup files
+*.xpr.pb
