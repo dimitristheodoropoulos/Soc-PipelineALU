@@ -1,41 +1,69 @@
-# Vivado project files
-*.xpr
-*.xps
-*.xise
-
-# Vivado-generated directories
-/.Xil/
-/_xmsgs/
-/SoC-PipelineALU.cache/
-/SoC-PipelineALU.gen/
-/SoC-PipelineALU.hw/
-/SoC-PipelineALU.ip_user_files/
-/SoC-PipelineALU.runs/
-/SoC-PipelineALU.sim/
-
-# Log and journal files
+# --- Vitis/Software Development Kit (SDK) specific files ---
+# Generated build directories for Vitis/Eclipse
+.build/
+.metadata/
+_ide/
+build/
+Debug/
+Release/
+platform/export/platform/sw/*/ # Ignore specific software build outputs within platform exports
+vitis_workspace/
+sdk_workspace/
+sdk/
+xsct_data/
+# Vitis/SDK project files that are regenerated or large
 *.log
 *.jou
-
-# Bitstream and programming files
+*.str
+*.out
+*.elf
 *.bit
 *.bin
 *.mcs
-*.prm
-*.prb
+*.mem
+*.rcf
+*.bif
+*.data
+# Python temporary/cache files from Vitis scripts
+__pycache__/
+*.pyc
+*.pyd
 
-# Other generated files
-*.str
-*.pb
+# --- Vivado/Hardware Development specific files ---
+# Vivado build directories
+.Xil/
+.cache/
+.ip_user_files/
+*.hw/
+*.runs/
+*.sim/
+*.srcs/
+*.xpr.backup/
+vivado_*.log
+vivado_*.jou
+# Vivado generated reports/logs/misc
+*.rpt
+*.html
+*.xml
+*.csv
+*.txt
 *.wdb
-*.tcl.log
+*.wsa
+*.jou
+*.log
+*.str
+*.dir
+*.dbg
+*.pb
 
-# SDK related files
-.sdk/
-*.sdk/
+# Hardware Platform files that are generated
+*.dsa # Sometimes this is source, sometimes generated - depends on workflow. If you generate it, ignore. If you start with it, keep it.
+*.hpf # If you generate it, ignore. If you start with it, keep it.
+*.sysdef # System definition file (often generated)
 
-# HLS generated files
-.ap/
-
-# Ignore project backup files
-*.xpr.pb
+# General temporary and system files
+*.tmp
+*~
+# Linux desktop specific
+Thumbs.db
+.DS_Store
